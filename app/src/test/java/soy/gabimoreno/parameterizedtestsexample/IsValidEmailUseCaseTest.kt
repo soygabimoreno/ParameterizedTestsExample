@@ -28,7 +28,7 @@ class IsValidEmailUseCaseTest(
 
     companion object {
         @JvmStatic
-        @Parameterized.Parameters
+        @Parameterized.Parameters(name = "email: {0} expected: {1}")
         fun data() = listOf(
             arrayOf("foo", false),
             arrayOf("foo@", false),
